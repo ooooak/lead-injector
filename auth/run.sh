@@ -1,0 +1,1 @@
+docker run -v $(pwd):/app -p 3000:3000 ooooak/auth -v /e/playground/microservices/auth:/app

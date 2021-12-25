@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-service
+anotation:
+
+spec:
+  rules:
+    - host: eshop.info
+      http:
+        paths:
+          - path: /auth/users
+            pathType: Prefix
+            backend:
+              service:
+                name: auth-service
+                port:
+                  number: 3000

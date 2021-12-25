@@ -1,0 +1,1 @@
+docker build -t ooooak/auth -f ./Dockerfile.dev .
